@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="za.co.dvt.jhb.undertheweather.MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/condIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/condDescr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/condIcon"
+        android:layout_alignLeft="@id/condIcon"
+        />
+
+    <TextView
+        android:id="@+id/temp"
+        style="@style/tempStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_alignBaseline="@id/condDescr"
+        android:layout_toRightOf="@id/condDescr"/>
+
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerHorizontal="true"
+        android:text="Today"/>
+
+    <TextView
+        android:id="@+id/maxTempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateText"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerHorizontal="true"
+        android:text="Max"/>
+
+    <TextView
+        android:id="@+id/minTempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maxTempText"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerHorizontal="true"
+        android:text="Min"/>
+
+
+    <TextView
+        android:id="@+id/cityText"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/minTempText"
+        android:text="City"/>
+
+
+</RelativeLayout>
