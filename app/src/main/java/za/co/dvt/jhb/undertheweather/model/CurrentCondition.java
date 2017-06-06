@@ -18,6 +18,8 @@ public class CurrentCondition {
 
     private float humidity;
 
+    private int iconId;
+
 
     public int getWeatherId() {
         return weatherId;
@@ -65,5 +67,13 @@ public class CurrentCondition {
 
     public void setHumidity(float humidity) {
         this.humidity = humidity;
+    }
+
+    public int getIconId() {
+        return iconId;
+    }
+
+    public void setIconId(int iconId) {
+        this.iconId = iconId;
     }
 }

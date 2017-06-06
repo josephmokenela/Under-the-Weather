@@ -4,53 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBlue"
     tools:context="za.co.dvt.jhb.undertheweather.MainActivity">
-
-
-
-    <ImageView
-        android:id="@+id/condIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="20dp"/>
-
-    <TextView
-        android:id="@+id/condDescr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/condIcon"
-        android:layout_alignLeft="@id/condIcon"
-        />
-
-    <TextView
-        android:id="@+id/temp"
-        style="@style/tempStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="12dp"
-        android:layout_alignBaseline="@id/condDescr"
-        android:layout_toRightOf="@id/condDescr"/>
 
 
     <TextView
         android:id="@+id/dateText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/temp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_centerHorizontal="true"
+        android:textStyle="bold"
         android:text="Today"/>
+
+
+    <TextView
+        android:id="@+id/condDescr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/dateText"/>
+
+    <TextView
+        android:id="@+id/temp"
+        style="@style/tempStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBaseline="@id/condDescr"
+        android:layout_toRightOf="@id/condDescr"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/condIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp"
+        android:layout_marginTop="20dp" />
 
     <TextView
         android:id="@+id/maxTempText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/dateText"
+        android:layout_below="@id/condIcon"
         android:layout_marginTop="20dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_centerHorizontal="true"
+        android:textStyle="bold"
         android:text="Max"/>
 
     <TextView
@@ -61,6 +69,7 @@
         android:layout_marginTop="20dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_centerHorizontal="true"
+        android:textStyle="bold"
         android:text="Min"/>
 
 
@@ -72,6 +81,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:layout_below="@+id/minTempText"
+        android:textStyle="bold"
         android:text="City"/>
 
 

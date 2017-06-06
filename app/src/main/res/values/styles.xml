@@ -10,7 +10,7 @@
 
 
     <style name="tempStyle" parent="@android:style/TextAppearance.Large">
-        <item name="android:textColor">#2E9AFE</item>
+        <item name="android:textColor">#FFFFFF</item>
         <item name="android:textStyle">bold</item>
     </style>
 

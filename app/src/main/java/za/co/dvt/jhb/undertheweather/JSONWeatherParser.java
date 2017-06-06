@@ -1,9 +1,13 @@
 package za.co.dvt.jhb.undertheweather;
 
+import android.util.Log;
+import android.widget.ImageView;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import za.co.dvt.jhb.undertheweather.model.CurrentCondition;
 import za.co.dvt.jhb.undertheweather.model.Location;
 import za.co.dvt.jhb.undertheweather.model.Weather;
 
@@ -13,9 +17,13 @@ import za.co.dvt.jhb.undertheweather.model.Weather;
 
 public class JSONWeatherParser {
 
+    private final static String TAG = "JSONWeatherParser.class";
+
 
     public static Weather getWeather(String data) throws JSONException {
         Weather weather = new Weather();
+
+        Log.i(TAG, "The data " + data);
 
         // We create out JSONObject from the data
         JSONObject jObj = new JSONObject(data);
@@ -65,8 +73,6 @@ public class JSONWeatherParser {
 
         return weather;
     }
-
-
 
 
     private static JSONObject getObject(String tagName, JSONObject jObj)  throws JSONException {
